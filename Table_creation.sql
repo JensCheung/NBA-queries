@@ -21,7 +21,7 @@ SET FOREIGN_KEY_CHECKS =1;
 CREATE TABLE players (
 player_id INT NOT NULL,
 team_abbreviation VARCHAR(100) NOT NULL,
-age DOUBLE NOT NULL CHECK(age>0.0),
+age DOUBLE NOT NULL CHECK(age>18.0),
 height DOUBLE NOT NULL CHECK(height>0.0),
 weight DOUBLE NOT NULL CHECK(weight>0.0),
 college VARCHAR(100),
